@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
@@ -6,7 +7,6 @@ namespace AppCRUD.CP
 {
     public partial class FrmClientes : Form
     {
-        // Cadena de conexión a la base de datos MySQL
         private string connectionString = "server=localhost;database=mayoristadb;uid=root;pwd=gerardodonelli;";
 
         public FrmClientes()
@@ -14,7 +14,6 @@ namespace AppCRUD.CP
             InitializeComponent();
         }
 
-        // Evento de clic en el botón de guardar cliente
         private void btnGuardarCliente_Click(object sender, EventArgs e)
         {
             string nombreCompleto = textBoxNombreCompleto.Text;
@@ -23,10 +22,22 @@ namespace AppCRUD.CP
             string telefono = textBoxTelefono.Text;
             string email = textBoxEmail.Text;
 
-            // Validaciones básicas
-            if (string.IsNullOrEmpty(nombreCompleto))
+            // Validaciones
+            if (string.IsNullOrWhiteSpace(nombreCompleto))
             {
                 MessageBox.Show("El nombre completo es obligatorio.");
+                return;
+            }
+
+            if (!EsDniValido(dni))
+            {
+                MessageBox.Show("El DNI debe contener solo números y tener entre 7 y 8 dígitos.");
+                return;
+            }
+
+            if (!EsEmailValido(email))
+            {
+                MessageBox.Show("El correo electrónico no tiene un formato válido.");
                 return;
             }
 
@@ -54,7 +65,26 @@ namespace AppCRUD.CP
             }
         }
 
-        // Limpiar los campos del formulario
+        // Función para validar el formato de un correo electrónico
+        private bool EsEmailValido(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        // Función para validar el DNI (7 u 8 dígitos numéricos)
+        private bool EsDniValido(string dni)
+        {
+            return Regex.IsMatch(dni, @"^\d{7,8}$");
+        }
+
         private void LimpiarCampos()
         {
             textBoxNombreCompleto.Clear();

@@ -41,6 +41,8 @@
             btnActualizar = new Button();
             btnEliminar = new Button();
             dataGridViewArticulos = new DataGridView();
+            textBoxBuscar = new TextBox();
+            btnBuscar = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewArticulos).BeginInit();
             SuspendLayout();
             // 
@@ -160,9 +162,29 @@
             dataGridViewArticulos.TabIndex = 13;
             dataGridViewArticulos.CellClick += dataGridViewArticulos_CellClick;
             // 
+            // textBoxBuscar
+            // 
+            textBoxBuscar.Location = new Point(29, 484);
+            textBoxBuscar.Name = "textBoxBuscar";
+            textBoxBuscar.PlaceholderText = "Buscar...";
+            textBoxBuscar.Size = new Size(176, 27);
+            textBoxBuscar.TabIndex = 14;
+            // 
+            // btnBuscar
+            // 
+            btnBuscar.Location = new Point(232, 484);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(94, 29);
+            btnBuscar.TabIndex = 15;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
+            // 
             // FrmArticulos
             // 
-            ClientSize = new Size(600, 460);
+            ClientSize = new Size(595, 583);
+            Controls.Add(btnBuscar);
+            Controls.Add(textBoxBuscar);
             Controls.Add(label1);
             Controls.Add(textBoxNombre);
             Controls.Add(label2);
@@ -184,5 +206,7 @@
             ResumeLayout(false);
             PerformLayout();
         }
+        private TextBox textBoxBuscar;
+        private Button btnBuscar;
     }
 }

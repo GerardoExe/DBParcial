@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\54381\\OneDrive\\Escritorio\\donelli\\AppCRUD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED5EB134-732B-480C-AF69-C6A786EBC227}|AppCRUD.csproj|C:\\Users\\54381\\OneDrive\\Escritorio\\donelli\\AppCRUD\\cp\\frmdetalleventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{ED5EB134-732B-480C-AF69-C6A786EBC227}|AppCRUD.csproj|solutionrelative:cp\\frmdetalleventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED5EB134-732B-480C-AF69-C6A786EBC227}|AppCRUD.csproj|c:\\users\\54381\\onedrive\\escritorio\\donelli\\appcrud\\cp\\frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{ED5EB134-732B-480C-AF69-C6A786EBC227}|AppCRUD.csproj|solutionrelative:cp\\frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ED5EB134-732B-480C-AF69-C6A786EBC227}|AppCRUD.csproj|c:\\users\\54381\\onedrive\\escritorio\\donelli\\appcrud\\cp\\frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED5EB134-732B-480C-AF69-C6A786EBC227}|AppCRUD.csproj|solutionrelative:cp\\frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED5EB134-732B-480C-AF69-C6A786EBC227}|AppCRUD.csproj|C:\\Users\\54381\\OneDrive\\Escritorio\\donelli\\AppCRUD\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{ED5EB134-732B-480C-AF69-C6A786EBC227}|AppCRUD.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED5EB134-732B-480C-AF69-C6A786EBC227}|AppCRUD.csproj|C:\\Users\\54381\\OneDrive\\Escritorio\\donelli\\AppCRUD\\cp\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{ED5EB134-732B-480C-AF69-C6A786EBC227}|AppCRUD.csproj|solutionrelative:cp\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{ED5EB134-732B-480C-AF69-C6A786EBC227}|AppCRUD.csproj|c:\\users\\54381\\onedrive\\escritorio\\donelli\\appcrud\\cp\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED5EB134-732B-480C-AF69-C6A786EBC227}|AppCRUD.csproj|solutionrelative:cp\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED5EB134-732B-480C-AF69-C6A786EBC227}|AppCRUD.csproj|c:\\users\\54381\\onedrive\\escritorio\\donelli\\appcrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,23 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FrmArticulos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\54381\\OneDrive\\Escritorio\\donelli\\AppCRUD\\CP\\FrmArticulos.cs",
-              "RelativeDocumentMoniker": "CP\\FrmArticulos.cs",
-              "ToolTip": "C:\\Users\\54381\\OneDrive\\Escritorio\\donelli\\AppCRUD\\CP\\FrmArticulos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "CP\\FrmArticulos.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T02:34:56.108Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\54381\\OneDrive\\Escritorio\\donelli\\AppCRUD\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -63,54 +39,34 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "FrmVentas.cs",
               "DocumentMoniker": "C:\\Users\\54381\\OneDrive\\Escritorio\\donelli\\AppCRUD\\CP\\FrmVentas.cs",
               "RelativeDocumentMoniker": "CP\\FrmVentas.cs",
               "ToolTip": "C:\\Users\\54381\\OneDrive\\Escritorio\\donelli\\AppCRUD\\CP\\FrmVentas.cs",
               "RelativeToolTip": "CP\\FrmVentas.cs",
-              "ViewState": "AgIAAPIAAAAAAAAAAAASwAIBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-14T02:52:32.181Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmDetalleVenta.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\54381\\OneDrive\\Escritorio\\donelli\\AppCRUD\\CP\\FrmDetalleVenta.cs",
-              "RelativeDocumentMoniker": "CP\\FrmDetalleVenta.cs",
-              "ToolTip": "C:\\Users\\54381\\OneDrive\\Escritorio\\donelli\\AppCRUD\\CP\\FrmDetalleVenta.cs [Dise\u00F1o]",
-              "RelativeToolTip": "CP\\FrmDetalleVenta.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T02:37:44.877Z",
               "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FrmVentas.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\54381\\OneDrive\\Escritorio\\donelli\\AppCRUD\\CP\\FrmVentas.cs",
-              "RelativeDocumentMoniker": "CP\\FrmVentas.cs",
-              "ToolTip": "C:\\Users\\54381\\OneDrive\\Escritorio\\donelli\\AppCRUD\\CP\\FrmVentas.cs [Dise\u00F1o]",
-              "RelativeToolTip": "CP\\FrmVentas.cs [Dise\u00F1o]",
+              "Title": "FrmClientes.cs",
+              "DocumentMoniker": "C:\\Users\\54381\\OneDrive\\Escritorio\\donelli\\AppCRUD\\CP\\FrmClientes.cs",
+              "RelativeDocumentMoniker": "CP\\FrmClientes.cs",
+              "ToolTip": "C:\\Users\\54381\\OneDrive\\Escritorio\\donelli\\AppCRUD\\CP\\FrmClientes.cs",
+              "RelativeToolTip": "CP\\FrmClientes.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAUwGEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T15:04:46.807Z",
-              "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-05-20T13:02:44.999Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\54381\\OneDrive\\Escritorio\\donelli\\AppCRUD\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\54381\\OneDrive\\Escritorio\\donelli\\AppCRUD\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T11:29:43.224Z",
-              "IsPinned": true
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",

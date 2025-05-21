@@ -8,14 +8,18 @@ namespace AppCRUD.DAL
     {
         private Conexion conexion = new Conexion();
 
-        public List<Articulo> ObtenerTodos()
+        public List<Articulo> ObtenerTodos(int pagina, int tamanioPagina)
         {
             List<Articulo> lista = new List<Articulo>();
             var conn = conexion.ObtenerConexion();
             conn.Open();
 
-            string query = "SELECT * FROM Articulos";
+            int offset = (pagina - 1) * tamanioPagina;
+            string query = "SELECT * FROM Articulos LIMIT @limite OFFSET @offset";
             MySqlCommand cmd = new MySqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@limite", tamanioPagina);
+            cmd.Parameters.AddWithValue("@offset", offset);
+
             MySqlDataReader reader = cmd.ExecuteReader();
 
             while (reader.Read())
@@ -33,6 +37,19 @@ namespace AppCRUD.DAL
 
             conn.Close();
             return lista;
+        }
+
+        public int ContarTotalArticulos()
+        {
+            var conn = conexion.ObtenerConexion();
+            conn.Open();
+
+            string query = "SELECT COUNT(*) FROM Articulos";
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            int total = Convert.ToInt32(cmd.ExecuteScalar());
+
+            conn.Close();
+            return total;
         }
 
         public void Agregar(Articulo a)

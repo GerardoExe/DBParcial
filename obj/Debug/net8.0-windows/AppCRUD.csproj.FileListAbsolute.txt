@@ -36,3 +36,7 @@ C:\Users\54381\OneDrive\Escritorio\donelli\AppCRUD\obj\Debug\net8.0-windows\AppC
 C:\Users\54381\OneDrive\Escritorio\donelli\AppCRUD\obj\Debug\net8.0-windows\AppCRUD.CP.FrmClientes.resources
 C:\Users\54381\OneDrive\Escritorio\donelli\AppCRUD\obj\Debug\net8.0-windows\AppCRUD.Form1.resources
 C:\Users\54381\OneDrive\Escritorio\donelli\AppCRUD\obj\Debug\net8.0-windows\AppCRUD.CP.FrmDetalleVentas.resources
+C:\Users\54381\OneDrive\Escritorio\donelli\AppCRUD\obj\Debug\net8.0-windows\AppCRUD.sourcelink.json
+C:\Users\54381\OneDrive\Escritorio\donelli\AppCRUD\obj\Debug\net8.0-windows\AppCRUD.CP.FrmCompras.resources
+C:\Users\54381\OneDrive\Escritorio\donelli\AppCRUD\obj\Debug\net8.0-windows\AppCRUD.CP.FrmDetalleCompras.resources
+C:\Users\54381\OneDrive\Escritorio\donelli\AppCRUD\obj\Debug\net8.0-windows\AppCRUD.Properties.Resources.resources

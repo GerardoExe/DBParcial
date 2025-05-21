@@ -32,6 +32,7 @@
             btncliente = new Button();
             btnVentas = new Button();
             btnArticulos = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // btncliente
@@ -56,7 +57,7 @@
             // 
             // btnArticulos
             // 
-            btnArticulos.Location = new Point(319, 234);
+            btnArticulos.Location = new Point(328, 243);
             btnArticulos.Name = "btnArticulos";
             btnArticulos.Size = new Size(164, 64);
             btnArticulos.TabIndex = 2;
@@ -64,11 +65,24 @@
             btnArticulos.UseVisualStyleBackColor = true;
             btnArticulos.Click += btnArticulos_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(328, 352);
+            button1.Name = "button1";
+            button1.Size = new Size(172, 64);
+            button1.TabIndex = 3;
+            button1.Text = "Compras";
+            button1.UseVisualStyleBackColor = true;
+            button1.Visible = false;
+            button1.Click += button1_Click_1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Control;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(btnArticulos);
             Controls.Add(btnVentas);
             Controls.Add(btncliente);
@@ -83,5 +97,6 @@
         private Button btncliente;
         private Button btnVentas;
         private Button btnArticulos;
+        private Button button1;
     }
 }

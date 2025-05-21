@@ -18,6 +18,8 @@ namespace AppCRUD.CP
         {
             CargarArticulos();
             comboBoxCategoria.Items.AddRange(new string[] { "Comestibles", "Librería", "Electrodomésticos" });
+            //dataGridViewArticulos.CellDoubleClick += dataGridViewArticulos_CellDoubleClick;
+
         }
 
         private void CargarArticulos()
@@ -32,7 +34,7 @@ namespace AppCRUD.CP
 
                 // Ocultar la columna ID_Articulo
                 if (dataGridViewArticulos.Columns.Contains("ID_Articulo"))
-                    dataGridViewArticulos.Columns["ID_Articulo"].Visible = false;
+                    dataGridViewArticulos.Columns["ID_Articulo"].Visible = true;
             }
         }
 
@@ -122,7 +124,48 @@ namespace AppCRUD.CP
             textBoxStock.Clear();
             textBoxUnidad.Clear();
         }
+        //private void dataGridViewArticulos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        //{
+        //    if (e.RowIndex < 0)
+        //        return;
 
-        
+        //    if (!dataGridViewArticulos.Columns.Contains("ID_Articulo"))
+        //    {
+        //        MessageBox.Show("No existe la columna 'ID_Articulo'.");
+        //        return;
+        //    }
+
+        //    var cellValue = dataGridViewArticulos.Rows[e.RowIndex].Cells["ID_Articulo"].Value;
+        //    if (cellValue == null || !int.TryParse(cellValue.ToString(), out int idArticulo))
+        //    {
+        //        MessageBox.Show("No se pudo leer el ID del artículo.");
+        //        return;
+        //    }
+
+        //    // Abre un formulario de detalle, pasando idArticulo
+        //    using FrmDetalleCompras detalleForm = new FrmDetalleCompras(idArticulo);
+        //    detalleForm.ShowDialog();
+        //}
+        private void BuscarArticuloPorNombre(string nombre)
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                string query = "SELECT * FROM articulos WHERE Nombre LIKE @nombre";
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@nombre" , nombre + "%");
+                MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                dataGridViewArticulos.DataSource = dt;
+
+                if (dataGridViewArticulos.Columns.Contains("ID_Articulo"))
+                    dataGridViewArticulos.Columns["ID_Articulo"].Visible = false;
+            }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            BuscarArticuloPorNombre(textBoxBuscar.Text.Trim());
+        }
     }
 }
